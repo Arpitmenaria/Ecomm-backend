@@ -1,0 +1,9 @@
+{
+  "name": "Shirt",
+  "category": "Mens Product",
+  "image": "Product5.jpg",
+  "discountPrice": 28.50,
+  "originalPrice": 38.60,
+  "sizes": ["XS", "S", "M", "L"],
+  "sale": true
+}
