@@ -11,7 +11,14 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://ecommerce-frontend-eight-umber.vercel.app/" // replace with actual deployed frontend URL
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 // Routes
 app.use("/api", productRoutes);
